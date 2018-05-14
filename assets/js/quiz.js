@@ -89,6 +89,8 @@
         // color the answers red
         answerContainers[questionNumber].style.color = "red";
       }
+      console.log(numCorrect);
+      document.getElementById("resp").setAttribute('value', numCorrect);
     });
 
     // show number of correct answers out of total
@@ -141,4 +143,7 @@
   submitButton.addEventListener("click", showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
+
+
 })();
+

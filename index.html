@@ -58,6 +58,8 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
+		<link rel="stylesheet" href="assets/css/video.popup.css">
+		
 	</head>
 
 	<body>
@@ -172,7 +174,7 @@
 						  				<div class="filtr-item">
 											<img src="assets/images/gallary/g1.jpg" alt="portfolio image"/>
 											<div class="item-title">
-												<a style="background-color: rgb(0,0,0,0.8);" href="#">
+												<a id="video1" class="youtube" style="background-color: rgb(0,0,0,0.8);" video-url="https://youtu.be/2Bv3U0htFEQ">
 													Como instalar o CodeBlocks
 												</a>
 												<p><span></span><span></span></p>
@@ -636,6 +638,9 @@ A sintaxe desta expressão é a seguinte: </p>
 						Avaliação
 					</h2>
 					<div style="text-align: left !important; color:black !important;">
+						Por favor, responda a avaliação, é importante seu feedback.
+					</div>
+					<div style="text-align: left !important; color:black !important;">
 						<div class="quiz-container">
 						 	<div id="quiz"></div>
 						</div>
@@ -650,12 +655,15 @@ A sintaxe desta expressão é a seguinte: </p>
 		</section><!--/.packages-->
 		<!--packages end-->
 		</div>
+
 		<section id="" class="packages">
 		 <div  class="col-md-6">
-			<div class="filtr-container">
-				<div style="padding: 0 2%;" class="filtr-item">
+			<div style="padding: 2%;" class="filtr-container">
+				<div  class="filtr-item">
+					<a href="https://sourceforge.net/projects/biblaureano/" target="_blank">
 					<img src="assets/images/gallary/g2.jpg" alt="portfolio image"/>
-						<div id="biruleibelaureano" class="item-title">
+					</a>
+						<div class="item-title">
 							<a style="background-color: rgb(0,0,0,0.8);" href="#">
 								Exemplos de código
 							</a>
@@ -678,31 +686,32 @@ A sintaxe desta expressão é a seguinte: </p>
 					</h2>
 				</div>
 					<div style="text-align: left !important; color:black !important;">
-						Por favor, preencha o formulário para nos ajudar na nossa pesquisa.
+						Por favor, agora preencha o formulário para nos ajudar em nossa pesquisa e validar sua avaliação.
 					</div>
 					<br>
 					<div>
-						<form action="https://formspree.io/luisergio98@gmail.com" method="POST">
+						<form name="submit-to-google-sheet">
 						    <div class="form-group">
 						    	<label>Email</label>
-						    	<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Insira seu email">
+						    	<input name="email"  type="email" class="form-control" aria-describedby="emailHelp" placeholder="Insira seu email" style="width:300px">
 						    	<small id="emailHelp" class="form-text text-muted">Nós não iremos compartilhar seu e-mail com ninguém.</small>
 							</div>
 							<div class="form-group">
 						    	<label>Nome</label>
-						    	<input type="text" class="form-control" placeholder="Insira seu nome">
+						    	<input name="nome" type="text" class="form-control" placeholder="Insira seu nome" style="width:300px">
 						    </div>
 						   	<div class="form-group">
 						   		<label>GRR (Matrícula)</label>
-						    	<input type="text" class="form-control" placeholder="Insira seu GRR">
+						    	<input name="grr" type="text" class="form-control" placeholder="Insira seu GRR" style="width:100px !important">
+						    	<small id="emailHelp" class="form-text text-muted">Caso não seja um aluno da UFPR pode deixar em branco</small>
 						    </div>
 						    <div class="form-group">
 						    	<label>Idade</label>
-						    	<input type="text" class="form-control" placeholder="Insira sua Idade">
+						    	<input name="idade" type="text" class="form-control" placeholder="Idade" maxlength="3" style="width:70px !important">
 							</div>	
 							<div class="form-group">
 								<label>Escolaridade</label>
-						    	<select class="form-control" id="sel1">
+						    	<select name="escolaridade" class="form-control" id="sel1" style="width:280px !important">>
 							    	<option>Selecione um</option>
 							    	<option>Ensino Fundamental Incompleto</option>
 							    	<option>Ensino Fundamental Cursando</option>
@@ -717,11 +726,24 @@ A sintaxe desta expressão é a seguinte: </p>
 							</div>
 							<div class="form-group">
 								<label>Como ficou sabendo do curso?</label>
-						    	<input type="text" class="form-control" placeholder="Insira como">
+						    	<input name="sabendo" type="text" class="form-control" placeholder="Insira como" style="width:500px !important">
 						  	</div>
-							<input style="display: none" value="">			  
+							<input name="acertos" id="resp" style="display: none" value="">			  
 						  <button type="submit" class="btn btn-primary">Enviar</button>
 						</form>
+
+						<script>
+						  const scriptURL = 'https://script.google.com/macros/s/AKfycbyvm-TSNwvErO0dcBUXq3pP6FfxaGYMx9UcalFEa9soLFUlFBw/exec'
+						  const form = document.forms['submit-to-google-sheet']
+
+						  form.addEventListener('submit', e => {
+						    e.preventDefault()
+						    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+						      .then(response => console.log('Success!', response))
+						      .catch(error => console.error('Error!', error.message))
+						  })
+						</script>
+
 					</div>
 					
 				</div><!--/.container-->
@@ -877,6 +899,11 @@ A sintaxe desta expressão é a seguinte: </p>
 
 		<!--Quiz JS-->
 		<script src="assets/js/quiz.js"></script>
+
+		<script src="assets/js/video.popup.js"></script>
+		<script type="text/javascript">
+			$("#video1").videoPopup();
+		</script>
 
 
 	</body>
