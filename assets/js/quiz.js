@@ -1,32 +1,106 @@
 (function() {
   const myQuestions = [
     {
-      question: "Quem é a melhor professora do mundo?",
+      img: "assets/images/exercicios/1.png",
+      question: "Qual a saída na impressão?",
       answers: {
-        a: "Jeroniza",
-        b: "Madruga",
-        c: "Sandramara"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Questão 2?",
-      answers: {
-        a: "Resposta errada",
-        b: "Resposta errada",
-        c: "Resposta correta"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Questão 3?",
-      answers: {
-        a: "Resposta errada",
-        b: "Resposta correta",
-        c: "Resposta errada"
+        a: "A resposta e: 12 ",
+        b: "A resposta e: 6 ",
+        c: "A resposta e: 4 "
       },
       correctAnswer: "b"
+    },
+    {
+      img: "assets/images/exercicios/2.png",
+      question: "Qual valor será mostrado?",
+      answers: {
+        a: "47",
+        b: "32",
+        c: "Nenhum"
+      },
+      correctAnswer: "a"
+    },
+    {
+      img: "assets/images/exercicios/3.png",
+      question: "Qual o valor da variável &quotinc&quot?",
+      answers: {
+        a: "14",
+        b: "19",
+        c: "27"
+      },
+      correctAnswer: "c"
+    },
+    {
+      img: "assets/images/exercicios/4.png",
+      question: "Este laço é infinito, qual o motivo?",
+      answers: {
+        a: "A comparação não é válida então nunca sai do laço",
+        b: "A condição de parada nunca é alcançada",
+        c: "Todo laço desse tipo é infinito"
+      },
+      correctAnswer: "b"
+    },
+    {
+      img: "assets/images/exercicios/5.png",
+      question: "Sobre vetores, é coreto afirmar que:",
+      answers: {
+        a: "Apenas a alternativa III está correta",
+        b: "Apenas a alternativa I está correta",
+        c: "Apenas as alternativas II e III estão corretas"
+      },
+      correctAnswer: "a"
+    },
+    {
+      img: "assets/images/exercicios/6.png",
+      question: "Qual valor será impresso?",
+      answers: {
+        a: "23",
+        b: "6",
+        c: "67"
+      },
+      correctAnswer: "b"
+    },
+    {
+      img: "assets/images/exercicios/7.png",
+      question: "o que o comando - if - representa?",
+      answers: {
+        a: "Loop",
+        b: "Condicional",
+        c: "Declaração de variáveis"
+      },
+      correctAnswer: "b"
+    },
+    {
+      img: "assets/images/exercicios/8.png",
+      question: "O CodeBLocks é um(a):",
+      answers: {
+        a: "Interface para desenvolvimento de programas",
+        b: "É um compilador para códigos C",
+        c: "É um programa que serve para execução de códigos em C"
+      },
+      correctAnswer: "a"
+    },
+    {
+      img: "assets/images/exercicios/9.png",
+      question: "Qual resultado será impresso?",
+      answers: {
+        a: "23 67 6 99 11 44 3",
+        b: "6 44",
+        c: "23 67 99 11 3"
+      },
+      correctAnswer: "b"
+    },
+    {
+      img: "assets/images/exercicios/10.png",
+      question: "Qual será o resultado final?",
+      answers: {
+        a: "Soma: 11",
+        b: "Soma: 13",
+        c: "Soma: 15"
+      },
+      correctAnswer: "c"
     }
+
   ];
 
   function buildQuiz() {
@@ -38,6 +112,9 @@
       // we'll want to store the list of answer choices
       const answers = [];
 
+      answers.push(
+        `<img style="border: black solid 4px" = '' src="${currentQuestion.img}"/><br><br>`
+      );
       // and for each available answer...
       for (letter in currentQuestion.answers) {
         // ...add an HTML radio button
@@ -94,7 +171,7 @@
     });
 
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `Acertou ${numCorrect} de ${myQuestions.length}`;
+    resultsContainer.innerHTML = `<br><h3>Acertou ${numCorrect} de ${myQuestions.length}</h3>`;
   }
 
   function showSlide(n) {

@@ -172,7 +172,9 @@
 
 						  			<div class="col-md-6">
 						  				<div class="filtr-item">
-											<img src="assets/images/gallary/g1.jpg" alt="portfolio image"/>
+						  					<a id="video2" class="youtube" style="background-color: rgb(0,0,0,0.8);" video-url="https://youtu.be/2Bv3U0htFEQ">
+												<img src="assets/images/gallary/g1.jpg" alt="portfolio image"/>
+											</a>
 											<div class="item-title">
 												<a id="video1" class="youtube" style="background-color: rgb(0,0,0,0.8);" video-url="https://youtu.be/2Bv3U0htFEQ">
 													Como instalar o CodeBlocks
@@ -462,7 +464,35 @@
 										Repare que nos vetores o primeiro índice é 0 e não 1, ou seja, um vetor de 5 posições começa no índice 0 e termina no índice 4.
 									</p>
 									<br>
+									<h3 style="color:white">Operadores aritiméticos e relacionais</h3>
+									<p style="color: white">
+										Para que possamos trabalhar com as variáveis iremos usar os operadores da linguagem, esses que nos permitem fazer soma, subtração ou maior que, menor que e etc.	
+									</p>
+									<p style="color: white">
+										Vale ressaltar que o operador "++" serve para incrementar um váriavel. Por exemplo, uma variável de tipo inteiro chamada "num" que contém dentro de si o número "1", fazendo "num++" ela incrementará mais um ao seu valor ficando agora com o total de "2" dentro de si. Usando o operador "--" funciona igual o citado anteriormente, porém para decrementar de um. Aplicando ele em "num", ficando "num--", que agora ela está valendo "2", deixaria "num" com "1" novamente
+									</p>
+									<br>
+									<p style="color: white">
+										<strong>Exemplo prático:</strong><br>
+										int num = 1;<br>
+										num++ ("num" passa a valer "2")<br>
+										num-- ("num" volta a valer "1")<br>
+									</p>
 
+									<br>
+									<div class="container">
+										<div class="row">
+											<div class="col-md-8"><img src="assets/images/Tabela-Operadores-Relacionais2.png" class="img-rounded img-responsive" style="border: 5px solid #000000"></div>
+											<div class="col-md-4"><img src="assets/images/OperadoresAritmeticos.jpg" class="img-rounded img-responsive" style="border: 5px solid #000000"></div>	
+										</div>
+									</div>
+									<br>
+									<!-- <h3 style="color:white">Printf e Scanf</h3>
+									<p style="color: white">
+											
+									</p> -->
+									<br>
+									<br>
 								</div><!--/.single-special-offer-->
 						</div><!--/.col-->
 					</div><!--/.row-->
@@ -671,8 +701,9 @@ Generalizando, qualquer coisa diferente de zero é "verdadeiro" e qualquer coisa
 		<!--discount-offer end-->
 
 		<div class="row">
-		<section id="avaliacao" class="packages" style="align:center">
+		<section style="border-bottom: lightgray 2px solid; width: 90%; margin: 0 auto;" id="avaliacao" class="packages" >
 			<div class="container">
+				<div class="col-md-3"></div>
 				<div class="gallary-header col-md-6" >
 					<h2 style="text-align: left;">
 						Avaliação
@@ -682,35 +713,41 @@ Generalizando, qualquer coisa diferente de zero é "verdadeiro" e qualquer coisa
 					</div>
 					<div style="text-align: left !important; color:black !important;">
 						<div class="quiz-container">
-						 	<div id="quiz"></div>
+						 	<div id="quiz">
+						 	</div>
 						</div>
 					</div>
-					<button id="previous" class="about-view discount-offer-btn">Questão Anterior</button>
-					<button id="next" class="about-view discount-offer-btn">Próxima Questão</button>
-					<button id="submit" class="about-view discount-offer-btn">Finalizar Quiz</button>
+					<div style="margin-top: 80%" >
+						<button id="previous" class="about-view discount-offer-btn">Questão Anterior</button>
+						<button id="next" class="about-view discount-offer-btn">Próxima Questão</button>
+						<button id="submit" class="about-view discount-offer-btn">Finalizar Quiz</button>
+					</div>
 					<div id="results"></div>
-
+					<div>
+						
+					</div>
 				</div><!--/.gallery-header-->
 
-				<div class="gallery-box">
+				<!-- <div class="gallery-box">
 					<div class="gallery-content">
 							<div class="filtr-container">
 
 
 									<div class="col-md-6">
 										<div class="filtr-item">
-										<img src="assets/images/gallary/g1.jpg" alt="portfolio image"/>
+										<a href="https://sourceforge.net/projects/biblaureano/">
+											<img src="assets/images/gallary/g2.jpg" alt="portfolio image"/>
+										</a>
 										<div class="item-title">
-											<a id="video1" class="youtube" style="background-color: rgb(0,0,0,0.8);" video-url="">
+											<a href="https://sourceforge.net/projects/biblaureano/" style="background-color: rgb(0,0,0,0.8);">
 												Exemplos de código
 											</a>
 											<p><span></span><span></span></p>
-										</div><!-- /.item-title -->
-									</div><!-- /.filtr-item -->
-									</div><!-- /.col -->
-							</div><!-- /.filtr-container-->
-					</div><!-- /.gallery-content -->
-				</div><!--/.galley-box-->
+										</div>
+									</div>
+							</div><
+					</div>
+				</div> -->
 
 
 				</div><!--/.container-->
@@ -722,7 +759,7 @@ Generalizando, qualquer coisa diferente de zero é "verdadeiro" e qualquer coisa
 
 
 		<section id="#" class="packages">
-			<div class="container" style="margin-left:33%; align-items:center;">
+			<div class="container">
 				<div class="gallary-header">
 					<h2 style="text-align: left;">
 						Formulário
@@ -745,7 +782,7 @@ Generalizando, qualquer coisa diferente de zero é "verdadeiro" e qualquer coisa
 						    </div>
 						   	<div class="form-group">
 						   		<label>GRR (Matrícula)</label>
-						    	<input name="grr" type="text" class="form-control" placeholder="Insira seu GRR" style="width:150px !important">
+						    	<input name="grr" type="text" class="form-control" placeholder="GRR" style="width:100px !important">
 						    	<small id="emailHelp" class="form-text text-muted">Caso não seja um aluno da UFPR pode deixar em branco</small>
 						    </div>
 						    <div class="form-group">
@@ -946,6 +983,7 @@ Generalizando, qualquer coisa diferente de zero é "verdadeiro" e qualquer coisa
 		<script src="assets/js/video.popup.js"></script>
 		<script type="text/javascript">
 			$("#video1").videoPopup();
+			$("#video2").videoPopup();
 		</script>
 
 
