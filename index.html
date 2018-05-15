@@ -322,19 +322,12 @@
 									<h2 style="color: white">Linguagem C</h2>
 
 									<p style="color: white" > A linguagem C foi criada por Dennis Ritchie, em 1972, no centro de Pesquisas
-										da Bell Laboratories. Sua primeira utilização importante foi a reescrita do Sistema
-										Operacional UNIX, que até então era escrito em assembly.
-										Em meados de 1970 o UNIX saiu do laboratório para ser liberado para as
-										universidades.<br><br> Foi o suficiente para que o sucesso da linguagem atingisse proporções
-										tais que, por volta de 1980, já existiam várias versões de compiladores C oferecidas
-										por várias empresas, não sendo mais restritas apenas ao ambiente UNIX, porém
-										compatíveis com vários outros sistemas operacionais.
-										O C é uma linguagem de propósito geral, sendo adequada à programação
-										estruturada. No entanto é mais utilizada escrever compiladores, analisadores léxicos,
-										bancos de dados, editores de texto, etc..<br><br>
-										A linguagem C pertence a uma família de linguagens cujas características são:
-										portabilidade, modularidade, compilação separada, recursos de baixo nível, geração
-										de código eficiente, confiabilidade, regularidade, simplicidade e facilidade de uso.
+										da Bell Laboratories, sendo ela uma linguagem estruturada de propósito geral, ou seja, pode ser utilizada em praticamente qualquer tipo de projeto.
+										<br>
+										A linguagem também é altamente portável, ou seja, é possível adaptar um código escrito em um tipo de computador para outro.
+										<br>
+										O C influênciou muitas linguagens populares atualmente como C++, Java, PHP entre outros,  e é utilizada atualmente para o desenvolvimento de Drivers e Aplicações em Sistemas Operacionais.
+										
 									</p>
 									<br>
 									<br>
@@ -420,11 +413,11 @@
 									Variável é um local reservado na memória para armazenar um tipo de dado.
 									<br>
 									<br>
-									Toda variável deve ter um identificador, ou seja um nome.
+									Toda variável deve ter um nome.
 									<br>
-									Além de ter um nome, a variável também precisa ter um tipo.
+									Além de ter um nome, a variável também precisa ter um tipo, o tipo de uma variável determina o tipo de dado que ela pode armazenar
 									<br>
-									O tipo de dado de uma variável determina o que ela é capaz de armazenar.</p>
+									</p>
 									<br>
 									<br>
 									<h3 style="color: white"> Principais tipos de dados</h3>
@@ -434,9 +427,9 @@
 									<br>
 									char: armazena caracteres.
 									<br>
-									float: armazena números com ponto flutuante (reais) com precisão simples.
+									float: armazena números reais com precisão simples
 									<br>
-									double: armazena números com ponto flutuante, com precisão dupla, ou seja normalmente possui o dobro da capacidade de uma variável do tipo float.</p>
+									double: armazena números reais, com precisão dupla, ou seja, possui o dobro da capacidade de uma variável do tipo float.</p>
 									<br>
 									<br>
 									<h3 style="color: white">Sintaxe de declarações de variáveis</h3>
@@ -466,7 +459,7 @@
 									<br>
 									<h3 style="color:white">Operadores aritiméticos e relacionais</h3>
 									<p style="color: white">
-										Para que possamos trabalhar com as variáveis iremos usar os operadores da linguagem, esses que nos permitem fazer soma, subtração ou maior que, menor que e etc.	
+										Para que possamos trabalhar com as variáveis iremos usar os operadores da linguagem, esses que nos permitem fazer soma, subtração ou maior que, menor que e etc.
 									</p>
 									<p style="color: white">
 										Vale ressaltar que o operador "++" serve para incrementar um váriavel. Por exemplo, uma variável de tipo inteiro chamada "num" que contém dentro de si o número "1", fazendo "num++" ela incrementará mais um ao seu valor ficando agora com o total de "2" dentro de si. Usando o operador "--" funciona igual o citado anteriormente, porém para decrementar de um. Aplicando ele em "num", ficando "num--", que agora ela está valendo "2", deixaria "num" com "1" novamente
@@ -483,13 +476,13 @@
 									<div class="container">
 										<div class="row">
 											<div class="col-md-8"><img src="assets/images/Tabela-Operadores-Relacionais2.png" class="img-rounded img-responsive" style="border: 5px solid #000000"></div>
-											<div class="col-md-4"><img src="assets/images/OperadoresAritmeticos.jpg" class="img-rounded img-responsive" style="border: 5px solid #000000"></div>	
+											<div class="col-md-4"><img src="assets/images/OperadoresAritmeticos.jpg" class="img-rounded img-responsive" style="border: 5px solid #000000"></div>
 										</div>
 									</div>
 									<br>
 									<!-- <h3 style="color:white">Printf e Scanf</h3>
 									<p style="color: white">
-											
+
 									</p> -->
 									<br>
 									<br>
@@ -510,7 +503,7 @@
 					</h2>
 
 					<div style="text-align: left !important; color:black !important;">
-					<p>Para a linguagem C, quando uma variável contém o valor 0 (zero), ela está com o valor falso. Qualquer outro valor diferente de zero (positivo ou negativo), significa verdadeiro.
+					<p>Na liguagem C o númro 0 representa falso, ou seja, se uma variável possui o valor 0 ela está com o valor falso, valores diferentes de 0 representam verdadeiro.
 <br>
 Generalizando, qualquer coisa diferente de zero é "verdadeiro" e qualquer coisa igual a zero é "falso".</p>
 
@@ -539,19 +532,19 @@ Generalizando, qualquer coisa diferente de zero é "verdadeiro" e qualquer coisa
 										<br>
 										<br>
 										<h3 style="color: white">Comando IF</h3>
-											<p style="color: white">A instrução IF é a estrutura de teste mais básica e é encontrada em todas as linguagens (com sintaxes diferentes). Ela permite executar uma série de instruções caso uma condição se realize. A sintaxe desta expressão é a seguinte: </p>
+											<p style="color: white">O comando IF permite executar uma série de intruções caso a condição imposta seja cumprida, sua sintaxe é a seguinte: </p>
 											<br>
 											<img src="assets/images/if.png" class="img-rounded img-responsive" style="border: 5px solid #000000">
 											<br>
 											<br>
 									  <h3 style="color: white">Comando IF/ELSE</h3>
-											<p style="color: white">A instrução IF em sua forma básica só testa uma condição. Na maioria das vezes, gostaríamos de poder escolher as instruções a serem executadas em caso do não cumprimento da condição. A expressão IF... ELSE permite executar outra série de instruções em caso do não cumprimento da condição. Reutilizando o código anterior a sintaxe desta expressão é a seguinte:  </p>
+											<p style="color: white">O comando ELSE é utilizado para executar trechos de código caso a condição imposta no IF não seja cumprida, reutilizando o código anterior sua sintaxe é a seguinte: </p>
 											<br>
 											<img src="assets/images/else.png" class="img-rounded img-responsive" style="border: 5px solid #000000">
 											<br>
 											<br>
 										<h3 style="color: white">Comando SWITCH</h3>
-											<p style="color: white">A Instrução switch efetua vários testes de valores sobre o conteúdo de uma mesma variável. Esta conexão condicional simplifica muito o teste de vários valores de uma variável, pois esta operação teria sido complicada (mas possível) com ifs imbricados. Sua sintaxe é a seguinte:  </p>
+											<p style="color: white">O comando switch é utilizado para realizar vários testes sobre o conteúdo de uma variável, não sendo necessário utilizar vários IFs. Sua sinttaxe é a seguinte:  </p>
 											<br>
 											<img src="assets/images/switch.png" class="img-rounded img-responsive" style="border: 5px solid #000000">
 											<br>
@@ -574,16 +567,14 @@ Generalizando, qualquer coisa diferente de zero é "verdadeiro" e qualquer coisa
 
 					<div style="text-align: left !important; color:black !important;">
 					<p>
-						Os loops são estruturas que executam várias vezes a mesma série de instruções até que uma condição não seja mais realizada. Às vezes, chamamos estas estruturas de instruções repetitivas ou iterações.Utilizam-se os comandos FOR e WHILE
+						Os loops são estruturas que executam várias vezes a mesma série de instruções até que uma condição imposta não seja mais cumprida.Utilizam-se os comandos FOR e WHILE
 						</p>
 						<br>
 						<br>
 						<h3>Comando FOR</h3>
 						<br>
 						<br>
-						<p>A instrução for executa várias vezes a mesma série de instruções: é um loop.
-
-						Em sua sintaxe, basta especificar o nome da variável que serve de contador (e, eventualmente, o seu valor inicial, a condição sobre a variável para a qual o loop para (basicamente uma condição que testa se o valor do contador excede um limite) e, finalmente, uma instrução que incrementa (ou decrementa) o contador.
+						<p>O comando FOR executa a mesma sequência de comandos, o tornando uma estrutura de repetição ou loop. Sua sintaxe é composta por uma variável contadora que servirá para controlar o loop, uma condição para a execução do loop e por fim um incremento a variável contadora.
 
 						A sintaxe desta expressão é a seguinte: </p>
 						<br>
@@ -594,7 +585,7 @@ Generalizando, qualquer coisa diferente de zero é "verdadeiro" e qualquer coisa
 						<h3>Comando WHILE</h3>
 						<br>
 						<br>
-					  <p>A instrução while representa outro meio de executar várias vezes a mesma série de instruções. A sintaxe desta expressão é a seguinte: </p>
+					  <p>A instrução while representa outro meio de executar várias vezes a mesma sequência de instruções. A sintaxe desta expressão é a seguinte: </p>
 						<br>
 						<br>
 						<img src="assets/images/while.png" class="img-rounded img-responsive" style="border: 5px solid #0066ff">
@@ -724,7 +715,7 @@ Generalizando, qualquer coisa diferente de zero é "verdadeiro" e qualquer coisa
 					</div>
 					<div id="results"></div>
 					<div>
-						
+
 					</div>
 				</div><!--/.gallery-header-->
 
@@ -771,14 +762,17 @@ Generalizando, qualquer coisa diferente de zero é "verdadeiro" e qualquer coisa
 					<br>
 					<div>
 						<form name="submit-to-google-sheet" style="align-items:center;">
+							<small class="emailHelp"> Campos marcados com * são obrigatórios</small>
+							<br>
+							<br>
 						    <div class="form-group">
-						    	<label>Email</label>
-						    	<input name="email"  type="email" class="form-control" aria-describedby="emailHelp" placeholder="Insira seu email" style="width:300px">
+						    	<label>* Email</label>
+						    	<input name="email"  type="email" class="form-control" aria-describedby="emailHelp" placeholder="Insira seu email" style="width:300px" required>
 						    	<small id="emailHelp" class="form-text text-muted">Nós não iremos compartilhar seu e-mail com ninguém.</small>
 							</div>
 							<div class="form-group">
-						    	<label>Nome</label>
-						    	<input name="nome" type="text" class="form-control" placeholder="Insira seu nome" style="width:300px">
+						    	<label>* Nome</label>
+						    	<input name="nome" type="text" class="form-control" placeholder="Insira seu nome" style="width:300px" required>
 						    </div>
 						   	<div class="form-group">
 						   		<label>GRR (Matrícula)</label>
@@ -786,12 +780,12 @@ Generalizando, qualquer coisa diferente de zero é "verdadeiro" e qualquer coisa
 						    	<small id="emailHelp" class="form-text text-muted">Caso não seja um aluno da UFPR pode deixar em branco</small>
 						    </div>
 						    <div class="form-group">
-						    	<label>Idade</label>
-						    	<input name="idade" type="text" class="form-control" placeholder="Idade" maxlength="3" style="width:70px !important">
+						    	<label>* Idade</label>
+						    	<input name="idade" type="text" class="form-control" placeholder="Idade" maxlength="3" style="width:70px !important" required>
 							</div>
 							<div class="form-group">
-								<label>Escolaridade</label>
-						    	<select name="escolaridade" class="form-control" id="sel1" style="width:280px !important">>
+								<label>* Escolaridade</label>
+						    	<select name="escolaridade" class="form-control" id="sel1" style="width:280px !important" required>
 							    	<option>Selecione um</option>
 							    	<option>Ensino Fundamental Incompleto</option>
 							    	<option>Ensino Fundamental Cursando</option>
